@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Photography Journey</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>📸 My Photography Journey</h1>
+
+    <p>Capturing moments, one photo at a time.</p>
+
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </header>
+
+
+  <!-- Main content -->
+  <main>
+
+    <!-- Section 1 -->
+    <section>
+      <h2>About My Hobby</h2>
+
+      <p>
+        Photography is one of my favorite hobbies.
+        I enjoy capturing nature, people, and interesting moments.
+      </p>
+    </section>
+
+
+    <!-- Section 2 -->
+    <section>
+      <h2>Why I Love Photography</h2>
+
+      <p>
+        Photography allows me to be creative and see
+        ordinary things from a different perspective.
+      </p>
+    </section>
+
+
+    <!-- Section 3 -->
+    <section>
+      <h2>My Favorite Subjects</h2>
+
+      <ul>
+        <li>🌅 Sunsets</li>
+        <li>🌲 Nature</li>
+        <li>🏙️ City streets</li>
+      </ul>
+    </section>
+
+
+    <!-- Section 4 -->
+    <section>
+      <h2>My Goal</h2>
+
+      <p>
+        My goal is to improve my photography skills
+        and build a collection of photos that tell
+        interesting stories.
+      </p>
+    </section>
+
+  </main>
+
+
+  <!-- Dark mode JavaScript -->
+  <script>
+
+    const button = document.getElementById("themeToggle");
+
+    button.addEventListener("click", () => {
+
+      document.body.classList.toggle("dark");
+
+      if (document.body.classList.contains("dark")) {
+        button.textContent = "☀️ Light Mode";
+      } else {
+        button.textContent = "🌙 Dark Mode";
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>

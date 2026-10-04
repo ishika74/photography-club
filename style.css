@@ -1,0 +1,111 @@
+/* Basic settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Whole page */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #222;
+  line-height: 1.6;
+  transition: 0.3s;
+}
+
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: white;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header p {
+  margin-bottom: 20px;
+}
+
+
+/* Dark mode button */
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+/* Four sections */
+section {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 15px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Section headings */
+section h2 {
+  margin-bottom: 10px;
+}
+
+
+/* List */
+ul {
+  padding-left: 25px;
+}
+
+
+/* ================= */
+/* DARK MODE */
+/* ================= */
+
+body.dark {
+  background: #121212;
+  color: #eeeeee;
+}
+
+body.dark header,
+body.dark section {
+  background: #1e1e1e;
+}
+
+body.dark button {
+  background: #eeeeee;
+  color: #222222;
+}
+
+
+/* ================= */
+/* MOBILE */
+/* ================= */
+
+@media (max-width: 600px) {
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+}
